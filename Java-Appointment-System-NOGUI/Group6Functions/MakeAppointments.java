@@ -33,7 +33,7 @@ public class MakeAppointments {
             return;
         }
         
-        System.out.println ("Enter Day of Apointment (1-31): ");
+        System.out.println ("Enter Day of Appointment (1-31): ");
         int newDay = scanner.nextInt();
         if (newDay < 0 || newDay > 31) {
             System.out.println ("Invalid day");
