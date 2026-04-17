@@ -9,8 +9,8 @@ public class FinalizeToText {
 		  FileWriter Flwriter = new FileWriter ("FinalAppointments.txt"); // if this does not work i think the Error would be the pathing of the files
 		  
 		  
-		  
-		  System.out.println ("=== Appointment List ===\n");
+		  System.err.println("");
+		  System.out.println ("\nFinalAppointments.txt file has been created!\n");
 	        if (count == 0) {
 	            System.out.println ("No Appointments found");
 	        }

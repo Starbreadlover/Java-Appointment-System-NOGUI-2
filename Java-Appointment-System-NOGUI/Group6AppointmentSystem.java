@@ -22,6 +22,7 @@ public class Group6AppointmentSystem {
             System.out.println ("[1] Book An Appointment");
             System.out.println ("[2] View Booked Appointments");
             System.out.println ("[3] Cancel Appointment");
+            System.out.println("[4: Save Appointments");
             System.out.println ("[6] Exit");
      
             System.out.print ("Enter Choice: ");
@@ -63,7 +64,12 @@ public class Group6AppointmentSystem {
                             make.getendHours(), make.getCount());
                     
                     make.setCount(Newcount);
+                    break;
                     
+                case 4:
+                    finalize.Write(make.getAppointmentNames(), make.getAppointmentMonth(), make.getAppointmentDays(),
+                make.getstartHours(), make.getendHours(),make.getCount());
+
                 default :
                     break;
         }
@@ -71,8 +77,7 @@ public class Group6AppointmentSystem {
             
         } while (choice != Sentinel);
         
-        finalize.Write(make.getAppointmentNames(), make.getAppointmentMonth(), make.getAppointmentDays(),
-                make.getstartHours(), make.getendHours(),make.getCount());
+    
     }
     
 }
